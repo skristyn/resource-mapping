@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Islandview Central</title>
+	<meta content="text/html"/>
+  <meta charset="utf-8" />
+  <script src="https://use.fontawesome.com/41c8452d22.js"></script>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="leaflet.awesome-markers.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+	integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+	crossorigin=""/>
+  <link href='https://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'>
+  <link rel="stylesheet" href="stylesheet.css">
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+	integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+	crossorigin=""></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+  <div class="header">
+  	<a href="#"><img src="images/IVC-logo-2.png" alt="Islandview Central"></a>
+  	<p>Islandview Central</p>
+  	<ul class="links">
+  		<li><a href="" class="selected">Map</a></li>
+  		<li><a href="about.html">About</a></li>
+  		<li><a href="resources.html">Resources</a></li>
+  	</ul>
+  </div>
+  <div id="main">
+    <h1>Neighborhood Map</h1>
+    <p class="centered">This map will help you find resources and things to do in Islandview!</p>
+    <div id="controls">
+      <div id="form">
+        <form action="">
+          <!--<input type="button" name="filter" value="all" checked>
+          <input type="button" name="filter" value="transportation"><i class="fa fa-car"></i>
+          <input type="button" name="filter" value="businesses">
+          <input type="button" name="filter" value="community">
+          <input type="button" name="filter" value="school">
+          <input type="button" name="filter" value="fun">-->
+          <button type="button" name="filter" value="all"><i class="fa fa-globe"></i>All</button>
+          <button type="button" name="filter" value="transportation"><i class="fa fa-bus"></i>Transportation</button>
+          <button type="button" name="filter" value="businesses"><i class="fa fa-building"></i>Business</button>
+          <button type="button" name="filter" value="community"><i class="fa fa-users"></i>Community</button>
+          <button type="button" name="filter" value="school"><i class="fa fa-graduation-cap"></i>School</button>
+          <button type="button" name="filter" value="fun"><i class="icon ion-ios-basketball"></i>Recreation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="mapid"></div>  
+  <div id="footer"><p>Data from <a href="https://data.detroitmi.gov/">Detroit Open Data Portal</a> and <a href="https://maps.google.com/">Google Maps</a></p></div>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="leaflet.awesome-markers.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

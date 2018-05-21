@@ -1,0 +1,337 @@
+* {
+	margin: 0 auto 0 auto;
+	text-align:left;
+}
+
+body{
+	font-family: 'Ovo',helvetica, arial, sans-serif;
+	min-width: 320px;	
+}
+
+h1,h2,h3,h4 {
+	font-weight: bold;
+}
+
+h1 {
+	display: inline-block;
+	padding: 20px 0 15px;
+	text-align: center;
+	color:#000;
+	width: 100%;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header{
+	background-color: #21c41f;
+	padding: 0 20px 0 20px;
+	position:relative;
+    height: 122px;
+}
+
+.header img {
+    width: 100px;
+    margin-top: 8px;
+    float: left;
+}
+
+.header p {
+    font-size: 28px;
+    line-height: 36px;
+    display: inline-block;
+    margin: 25px 0 0 22px;
+    color: #fff;
+    font-weight: bold;
+    width: 135px;
+    cursor: default;
+}
+
+.links{
+	list-style-type: none;
+	display: inline;
+	float: right;
+	margin-top: 42px;
+	font-weight: 700;
+	height:10%;
+	padding-left:0;
+}
+
+.links li{
+    padding-left: 7px;
+    font-size: 28px;
+    display: inline;
+}
+
+.links a{
+	text-decoration: none;
+	font-family: 'Ovo', Helvetica, Arial, sans-serif;
+	color: #fff;
+	padding: 3px 8px;
+}
+
+.links a:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.links a.selected {
+	background-color: rgba(0,0,0,0.2);
+}
+
+.name{
+	font-weight: bold;
+}
+
+#bios {
+	margin: 30px 0 0;
+}
+
+.bio{
+    min-height: 115px;
+    padding-bottom: 25px;
+    padding-right: 35px;
+    padding-left: 20px;
+    max-width: 720px;
+}
+
+.bio img{
+	background-color: #cccccc;
+	width: 100px;
+	height: 100px;
+	display:inline;
+	float: left;
+	margin: 0 10px 0 15px;
+}
+
+.bio p{
+	padding: 0 0 0 125px;
+	line-height: 22px;
+}
+
+.bio p:nth-child(2) {
+	padding: 0 0 10px 0;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.bio:last-child p:first-child {
+	padding: 15px 0 10px 125px;
+    font-size: 20px;
+}
+
+.bio:last-child p:last-child {
+	padding-left: 125px;
+	font-size: 16px;
+}
+
+.centered{
+    text-align: center;
+    line-height: 22px;
+    padding: 1px 30px;
+    text-indent: 0;
+}
+
+#mapid{
+	margin-top:2%;
+}
+
+.resourcelist {
+    padding: 30px 30px 0;
+    max-width: 720px;
+}
+
+.resourceheader{
+	background-color: #eee;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Ovo';
+    font-size: 18px;
+    width: 100%;
+}
+
+.resourceheader.active, .resourceheader:hover {
+	background-color: #ccc;
+}
+
+.resourceheader i.fa-caret-up {
+	display: none;
+}
+
+.resourceheader.active i.fa-caret-up {
+	display: inline-block;
+}
+
+.resourceheader.active i.fa-caret-down {
+	display: none;
+}
+
+.resourceheader i{
+	float: right;
+}
+
+.resourcegroup {
+	padding: 0 18px;
+	background-color: #eee;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	font-size: 16px;
+}
+
+.resourcegroup p {
+	padding-bottom: 10px;
+	display: block;
+}
+
+.resourcegroup p:last-child {
+	padding-bottom: 20px;
+}
+
+.resourcegroup p:first-child {
+	padding-top: 20px;
+}
+
+div#mapid {
+	max-width: 960px; 
+	height: 675px;
+	position: relative;
+	outline: none;
+	margin: 20px auto 15px;
+}
+
+div#form {
+	margin: 10px 15px;
+	font-family: 
+}
+
+div#form form {
+	text-align: center;
+	text-indent: 0;
+}
+
+div#footer {
+	max-width: 800px;
+	margin-bottom: 20px;
+}
+
+div#footer p {
+	text-align: center;
+    padding: 10px 15px;
+    text-indent: 0;
+    line-height: 22px;
+}
+
+div#footer p a {
+	color: #000;
+}
+
+div#controls {
+	max-width: 800px;
+}
+
+div#controls button {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    font-family: 'Ovo', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+div#controls button:hover {
+	background-color: rgba(33,196,31,0.12);
+}
+
+div#controls button i{
+	padding-right: 5px;
+	font-size: 22px;
+	vertical-align: bottom;
+    line-height: 18px;
+}
+
+div#controls i.ion-ios-basketball{
+	color: #ee6a20;
+	height: 20px;
+    margin-top: -2px;
+    display: inline-block;
+}
+
+div#controls i.fa-users{
+	color: #9e52d6;
+}
+
+div#controls i.fa-graduation-cap{
+	color: #fc4455;
+}
+
+div#controls i.fa-building{
+	color: #289cf3;
+}
+
+div#controls i.fa-bus{
+	color: #21c41e;
+}
+
+div#controls i.fa-globe{
+	color: #000;
+}
+
+@media (max-width: 800px) {
+	div#mapid {
+		width: 100%;
+	}
+	div#footer, div#controls {
+		text-indent: 15px;
+	}
+}
+
+@media (max-width: 640px) {
+	.bio {
+		padding:0 30px 25px;
+	}
+	
+	.bio img {
+	    margin: 10px auto 0;
+	    display: block;
+	    float: none;
+	}
+
+	.bio p {
+		padding: 10px 15px 0;
+		text-align: center;
+
+	}
+
+	.links {
+		font-size: 16px;
+		width: 150px;
+		position: absolute;
+		line-height: 36px;
+		margin-top: 25px;
+		padding-left: 14px;
+
+	}
+
+	.header {
+		height: 166px;
+	}
+	
+	.header p {
+		display: none;
+	}
+	
+	.header img {
+		margin-top: 30px;
+	}
+	
+	.bio p:nth-child(2) {
+		display: block;
+		padding: 10px 0 0 0;
+	}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Islandview Central</title>
+	<meta content="text/html"/>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+	integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+	crossorigin=""/>
+    <link href='https://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+	<script src="https://use.fontawesome.com/41c8452d22.js"></script>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+	integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+	crossorigin=""></script>
+	<link rel="stylesheet" type="text/css" href="style.css">		
+</head>
+<body>
+	<div class="header">
+		<a href="index.html"><img src="images/IVC-logo-2.png" alt="Islandview Central"></a>
+	  	<p>Islandview Central</p>
+		<ul class="links">
+			<li><a href="index.html">Map</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="" class="selected">Resources</a></li>
+		</ul>
+	</div>
+	<h1>Resources</h1>
+	<p class="centered">Helpful links to for finding even more places and things in Islandview.</p>
+	<div class="resourcelist">
+		<button class="resourceheader">Jobs<i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></button>
+		<div class="resourcegroup panel"> 
+			<p><a href="https://www.glassdoor.com/Job/detroit-jobs-SRCH_IL.0,7_IC1134644.htm" target="_blank">Glassdoor Detroit Job Search</a></p>
+			<p><a href="http://gdyt.org/youth/" target="_blank">Grow Detroit's Young Talent</a></p>
+			<p><a href="https://quickenloanscareers.com/about-us/internship-program/" target="_blank">QL Summer Internships</a></p>
+		</div>
+		<br/>
+		<button class="resourceheader">Child Care<i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></button>
+		<div class="resourcegroup panel"> 
+			<p><a href="http://www.ivbc.org/ccc/" target="_blank">Islandview Baptist Church Child Care Center</a></p>
+			<p><a href="https://www.care.com/b/l/sha-sha-s-kiddy-korner/detroit-mi" target="_blank">Sha Sha Kiddy Korner</a></p>
+			<p><a href="https://www.care.com/b/l/l-l-guardians-of-angel-child-care-development-llc/detroit-mi" target="_blank">L&amp;L Guardians of Angels Development Center</a></p>
+		</div>
+		<br/>
+		<button class="resourceheader">Bus<i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></button>
+		<div class="resourcegroup panel"> 
+			<p><a href="http://www.detroitmi.gov/How-Do-I/Locate-Transportation/Bus-Schedules" target="_blank">DDOT Bus Routes</a></p>
+			<p><a href="http://www.detroitmi.gov/How-Do-I/Locate-Transportation/Transporation-Fares" target="_blank">DDOT Bus Fare</a></p>
+			<p><a href="http://www.smartbus.org/Schedules/Route-Schedules/" target="_blank">Smart Bus</a></p>
+		</div>
+		<br/>
+		<button class="resourceheader">Gyms &amp; Rec Centers<i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></button>
+		<div class="resourcegroup panel"> 
+			<p><a href="http://www.detroitmi.gov/How-Do-I/Find/Butzel-Family-Center" target="_blank">Butzel Family Center</a></p>
+			<p><a href="http://www.detroitmi.gov/How-Do-I/Find/Detroit-Parks-Recreation/Young-Recreation-Center" target="_blank">Coleman Young Community Center</a></p>
+			<p><a href="http://downtownyouthboxing.org/" target="_blank">Downtown Boxing Gym</a></p>
+			<p><a href="http://www.igivefitness.com/" target="_blank">GIVE Fitness</a></p>
+		</div>
+		<br/>	
+	</div>
+	
+	<script type="text/javascript">
+	var acc = document.getElementsByClassName("resourceheader");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].onclick = function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  }
+	}
+	</script>
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
